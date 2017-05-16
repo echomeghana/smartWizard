@@ -1,0 +1,43 @@
+#block1 {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#block2 {
+    float: right;
+    width: 100%;
+}
+
+#blocks2 .h2,
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#block1 h2.houseImg2 {
+    border-right: #b0c6d1 2px solid;
+    padding-left: 0px;
+    border-top: #b0c6d1 2px solid;
+    padding-left: 4.5em;
+    font-weight: bold;
+    font-size: 20px;
+    background: url(../../dist/img/ico_house.gif) no-repeat left top;
+    padding-bottom: 0.1em;
+    margin: 0px;
+    border-left: #b0c6d1 2px solid;
+    padding-top: 0.5em;
+    border-bottom: #b0c6d1 1px solid
+}
+
+h2 span {
+    color: #47a4c7;
+    font-weight: normal;
+}
+
+#block2 ul {
+    margin: 0;
+    padding: 0 0 2em 0;
+    list-style-type: none;
+    font-size: 13px;
+}

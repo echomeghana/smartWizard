@@ -1,0 +1,161 @@
+<fieldset class="gene">
+    <!--error-->
+    <!--<span id="LabelError" disabled="disabled"><div class="error_form error_form2"><div class="cont_error"><ul><li>Country</li></ul></div></div></span>-->
+    <!--End of error-->
+    <p class="manda">
+        <span>*</span> All fields are mandatory</p>
+    <script type="text/javascript">
+    //<![CDATA[
+    Sys.WebForms.PageRequestManager._initialize('ToolkitScriptManager1', document.getElementById('form1'));
+    Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tUpdatePanel1', 'tUpdatePanel2', 'tUPMObile'], [], [], 90);
+    //]]>
+    </script>
+    <input type="hidden" name="fldFocusedCtrl" id="fldFocusedCtrl">
+    <span id="cvMsgError" style="color:Red;display:none;"></span>
+    <div id="ValidationSummary1" class="error_validator error_validator2" style="color:Red;display:none;">
+    </div>
+    <span id="cvMsgError2" style="color:Red;display:none;"></span>
+    <div id="ValidationSummary2" class="error_validator error_validator2" style="color:Red;display:none;">
+    </div>
+    <div id="ValidationSummary3" class="error_validator error_validator2" style="color:Red;display:none;">
+    </div>
+    <span id="CaptchaError" style="color:Red;display:none;"></span>
+    <div class="hm5">
+        <label for="options">
+            <span>*</span> Please Choose one of the below options:</label>
+        <fieldset>
+            <table id="rdnOptions" border="0">
+                <tbody>
+                    <tr>
+                        <td><span title="Select this option if you are submitting a claim/invoice never submitted to AXA previously"><input id="rdnOptions_0" type="radio" name="rdnOptions" value="rdnSumbit" checked="checked" tabindex="1"><label for="rdnOptions_0">Submit new claim</label></span></td>
+                        <td><span title="Select this option if you would like to track the progress of a claim you have already submitted to AXA"><input id="rdnOptions_1" type="radio" name="rdnOptions" value="rdnFollow" onclick="javascript:setTimeout('__doPostBack(\'rdnOptions$1\',\'\')', 0)" tabindex="1"><label for="rdnOptions_1">Follow claim</label></span></td>
+                        <td><span title="Select this option if you have been requested to provide further information in relation to a claim you have already submitted to AXA."><input id="rdnOptions_2" type="radio" name="rdnOptions" value="rdnManage" onclick="javascript:setTimeout('__doPostBack(\'rdnOptions$2\',\'\')', 0)" tabindex="1"><label for="rdnOptions_2">Manage claim</label></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    <div id="dvClaimSubmission">
+        <div class="space">
+        </div>
+        <div class="hm2">
+            <label for="PolicyNo" title="This can be found on your membership card a picture of which is shown on the right hand side of the screen">
+                <span>*</span> Policy No <a href="#" title="help" style="font-size: 1em; font-family: Arial, Helvetica, sans-serif;
+                                                                color: #666;" rel="imgtip[0]">(Where can I find this)</a>:
+            </label>
+            <input name="txtPolicyNo1" type="text" maxlength="2" id="txtPolicyNo1" tabindex="2" class="txt4" autocomplete="off" onkeyup="autoTab(this, document.form1.txtPolicyNo2)">
+            <input name="txtPolicyNo2" type="text" maxlength="2" id="txtPolicyNo2" tabindex="3" class="txt5" autocomplete="off" onkeyup="autoTab(this, document.form1.txtPolicyNo3)">
+            <input name="txtPolicyNo3" type="text" maxlength="9" id="txtPolicyNo3" tabindex="4" class="txt6" autocomplete="off" onkeyup="autoTab(this, document.form1.txtPolicyNo4)">
+            <input name="txtPolicyNo4" type="text" maxlength="3" id="txtPolicyNo4" tabindex="5" class="txt5" autocomplete="off" onkeyup="autoTab(this, document.form1.txtMemberID1)">
+            <a href="#" title="help" class="help">
+                <img class="calendar3" alt="help" src="../img/ico_help2.gif">
+                <iframe></iframe>
+                <!-- OLSMOT_GAQ_Help_Policy No.5.EN -->
+                <span class="tooltip"><span class="title">Policy No</span> <span class="text">This can
+                                                                be found on your membership card a picture of which is shown on the right hand side
+                                                                of the screen</span></span>
+                <!-- /OLSMOT_GAQ_Help_Policy No.5.EN -->
+            </a>
+            <span id="ctvPolicyNo" style="color:Red;display:none;"></span>
+            <span id="CustomValidator1" style="color:Red;display:none;"></span>
+        </div>
+        <div class="hm2">
+            <label for="MemberID" title="This can be found on your membership card a picture of which is shown on the right hand side of the screen">
+                <span>*</span> Membership No <a href="#" title="help" style="font-size: 1em; font-family: Arial, Helvetica, sans-serif;
+                                                                color: #666;" rel="imgtip[1]">(Where can I find this)</a>:
+            </label>
+            <input name="txtMemberID1" type="text" maxlength="8" id="txtMemberID1" tabindex="6" class="txt4" autocomplete="off" onkeyup="autoTab(this, document.form1.txtMemberID2)">
+            <input name="txtMemberID2" type="text" maxlength="1" id="txtMemberID2" tabindex="7" class="txt5" autocomplete="off" onkeyup="autoTab(this, document.form1.txtMemberID3)">
+            <input name="txtMemberID3" type="text" maxlength="3" id="txtMemberID3" tabindex="8" class="txt6" autocomplete="off" onkeyup="autoTab(this, document.form1.txtDOB)">
+            <a href="#" title="help" class="help">
+                <img class="calendar3" alt="help" src="../img/ico_help2.gif">
+                <iframe></iframe>
+                <!-- OLSMOT_GAQ_Help_Member ID.5.EN -->
+                <span class="tooltip"><span class="title">Membership No</span> <span class="text">This
+                                                                can be found on your membership card a picture of which is shown on the right hand
+                                                                side of the screen</span></span>
+                /OLSMOT_GAQ_Help_Member ID.5.EN
+            </a>
+            <span id="ctvMemberID" style="color:Red;display:none;"></span>
+            <span id="CustomValidator2" style="color:Red;display:none;"></span>
+        </div>
+        <div class="hm2">
+            <label for="dob" title="Date of Birth of the patient or person who the claim is for">
+                <span>*</span> DOB:
+            </label>
+            <input name="txtDOB" type="text" id="txtDOB" tabindex="9" class="txt2" autocomplete="off">
+            <input type="hidden" name="txtBirth_TextBoxWatermarkExtender_ClientState" id="txtBirth_TextBoxWatermarkExtender_ClientState">
+            <input type="hidden" name="txtDOBMaskedEditExtender_ClientState" id="txtDOBMaskedEditExtender_ClientState">
+            <input type="image" name="BtnBirth" id="BtnBirth" title="calendar" class="calendar" src="../img/calendar.gif" style="border-width:0px;">
+            <a href="#" title="help" style="vertical-align: top" class="help">
+                <img class="calendar3" alt="help" src="../img/ico_help2.gif">
+                <iframe></iframe>
+                <!-- OLSMOT_GAQ_Help_DOB.5.EN -->
+                <span class="tooltip"><span class="title">DOB</span> <span class="text">Date of Birth
+                                                                of the patient or person who the claim is for</span></span>
+                <!-- /OLSMOT_GAQ_Help_DOB5.EN -->
+            </a>
+        </div>
+        <div class="hm2">
+            <label for="email" title="The email address which we can contact you to update you on the progress of your claim">
+                <span>*</span> Email:
+            </label>
+            <input name="txtEmail" type="text" id="txtEmail" tabindex="10" class="txt8" autocomplete="off">
+            <a href="#" title="help" class="help">
+                <img class="calendar3" alt="help" src="../img/ico_help2.gif">
+                <iframe></iframe>
+                <!-- OLSMOT_GAQ_Help_Email.5.EN -->
+                <span class="tooltip"><span class="title">Email</span> <span class="text">The email
+                                                                address which we can contact you to update you on the progress of your claim</span></span>
+                <!-- /OLSMOT_GAQ_Help_Email5.EN -->
+            </a>
+            <span id="rgvEmail" style="color:Red;display:none;"></span>
+        </div>
+        <div class="hm2">
+            <div id="UPMObile">
+                <label for="mobile" title="The mobile phone number we can contact you to update you on the progress of your claim. Please ensure you select country and provider code.">
+                    <span>*</span> Mobile:
+                </label>
+                <select name="ddlCountry" onchange="javascript:setTimeout('__doPostBack(\'ddlCountry\',\'\')', 0)" id="ddlCountry" tabindex="11">
+                    <option selected="selected" value="-1"></option>
+                    <option value="00965">Kuwait</option>
+                    <option value="00966">Saudi Arabia</option>
+                    <option value="00968">Oman</option>
+                    <option value="00971">UAE</option>
+                    <option value="00973">Bahrain</option>
+                    <option value="00974">Qatar</option>
+                </select>
+                <select name="ddlProviderCode" id="ddlProviderCode" tabindex="12" class="ddl2">
+                </select>
+                <input name="txtMobile3" type="text" maxlength="15" id="txtMobile3" tabindex="13" class="txt6" autocomplete="off">
+                <span id="CustomValidator3" style="color:Red;display:none;"></span>
+                <a class="help" href="#" title="help">
+                    <img alt="help" class="calendar3" src="../img/ico_help2.gif">
+                    <iframe id="I1" name="I1" style="z-index: 1000;"></iframe>
+                    <span class="tooltip"><span class="title">Mobile</span> <span class="text">The mobile
+                                                                        phone number we can contact you to update you on the progress of your claim. Please
+                                                                        ensure you select country and provider code.</span></span>
+                    <!-- /OLSMOT_GAQ_Help_Mobile.5.EN -->
+                </a>
+                <label for="mobile" style="min-width: 27em;">
+                    <i>(NOTE:For a mobile other than the regions listed please select any region and prefix
+                                                                        available and enter your number or a dummy number like 000000 for login purpose.)
+                                                                    </i>
+                </label>
+            </div>
+        </div>
+        <div class="hm2">
+        </div>
+        <div class="hm2">
+            <div class="captcha"><span style="float:left;"><img src="CaptchaImage.aspx?guid=d81b083a-1b52-4246-b0e7-d5374da944c1" border="0" width="180" height="31"></span><span style="float:left;">Enter the code shown:<br><input name="CaptchaControl" type="text" size="5" maxlength="5" tabindex="4" value=""></span>
+                <br clear="all">
+            </div>
+        </div>
+        <div class="hm2">
+        </div>
+        <div class="hm2">
+            <input type="submit" name="btnSubmitRIClaim" value="Continue" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmitRIClaim&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSubmitRIClaim" tabindex="14" title="Continue" class="button bt1 rg" style="float: right;">
+            <input type="submit" name="btnDisclaimer" value="" onclick="return showModalPopUp();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnDisclaimer&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnDisclaimer" style="background-color:Transparent;border-width:0px;height:0px;width:0px;">
+        </div>
+    </div>
+</fieldset>

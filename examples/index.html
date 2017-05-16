@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Wizard - a JavaScript jQuery Step Wizard plugin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Include SmartWizard CSS -->
+    <link href="../dist/css/smart_wizard.css" rel="stylesheet" type="text/css" />
+    <link href="../dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <br />
+        <!-- SmartWizard html -->
+        <div id="smartwizard">
+            <ul class="nav-tabs nav-justified">
+                <li><a href="#step-1">1. Policy Validation</a></li>
+                <li><a href="#step-2">2. Claim Details</a></li>
+                <li><a href="#step-3">3. Review and Submit</a></li>
+                <li><a href="#step-4">4. Bank Transfer</a></li>
+            </ul>
+            <div>
+                <div id="step-1" class="">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                            <div id="block1">
+                                <h2 class="houseImg2">
+                                Health <br><span>Reimbursement Claim Submission</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                            <div id="block2" style="background: none;">
+                                <h2 id="h1">
+                                        <span style="text-align: center;">Reimbursement Claim Submission Procedures</span></h2>
+                                <ul style="background-image: none; padding-left: 0px;">
+                                    <li style="background-image: none; padding-left: 0px; text-decoration: underline;"><strong>
+                                            Step 1</strong></li>
+                                    <li style="background-image: none; padding-left: 0px;">Validate yourself by providing your policy no, membership no and Date of Birth which is available on your AXA medical membership card.</li>
+                                    <li style="background-image: none; padding-left: 0px; text-decoration: underline;"><strong>
+                                            Step 2</strong></li>
+                                    <li style="background-image: none; padding-left: 0px;">Upon successful validation, update the basic information regarding the medical service that you availed:</li>
+                                    <li style="background-image: none; padding-left: 20px;">- Attach the claim form that is duly signed and stamped by the medical practitioner along with the insured member’s or dependant’s signature.</li>
+                                    <li style="background-image: none; padding-left: 20px;">- Attach the supporting medical bills/invoices(mandatory).
+                                    </li>
+                                    <li style="background-image: none; padding-left: 0px;">Please note that you can submit multiple medical services availed over a period of time as one reimbursement claim submission. You will be provided with a reference number for future tracking.</li>
+                                    <li style="background-image: none; padding-left: 0px; text-decoration: underline;
+                                            color: #47a4c7;"><strong>
+                                                <h2 class="block2">
+                                                    IMPORTANT GUIDELINES FOR DOCUMENTS UPLOAD</h2>
+                                            </strong></li>
+                                    <li style="background-image: none; padding-left: 0px;">1. Ensure the documents are scanned in .jpg or .pdf formats.</li>
+                                    <li style="background-image: none; padding-left: 0px;">2. Set your scanner to a scan quality: 200 dpi.</li>
+                                    <li style="background-image: none; padding-left: 0px;">3. Set your scanner to scan type:</li>
+                                    <li style="background-image: none; padding-left: 20px;">- Black &amp; White for normal documents such as your claim form, invoices, prescriptions.</li>
+                                    <li style="background-image: none; padding-left: 20px;">- Grayscale for documents such as photos or X-rays.</li>
+                                    <li style="background-image: none; padding-left: 0px;"><strong>
+                                            <h2>
+                                                What next after you submit the claim online?
+                                            </h2>
+                                        </strong></li>
+                                    <li style="background-image: none; padding-left: 0px;">Upon receipt of all required documents online, AXA will process your claim within a maximum of 15 working days.
+                                    </li>
+                                    <li style="background-image: none; padding-left: 0px;">In case any required documentation is missing or if there is a need for additional supporting documents you will be duly notified via email and/or SMS.</li>
+                                    <li style="background-image: none; padding-left: 0px;">You can track the status of the submitted claim online.</li>
+                                    <li style="background-image: none; padding-left: 0px;">Note that AXA reserves the right to request for the original documents as part of processing your claims. Hence it is strongly recommended that you retain the original documents until you have reimbursed your claim. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="step-2" class="" style="display: none;">
+                    <h2>Step 2 Content</h2>
+                    <div>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+                </div>
+                <div id="step-3" class="" style="display: none;">
+                    Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div id="step-4" class="" style="display: none;">
+                    <h2>Step 4 Content</h2>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">My Details</div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Name:</th>
+                                    <td>Meghana</td>
+                                </tr>
+                                <tr>
+                                    <th>Email:</th>
+                                    <td>example@example.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include SmartWizard JavaScript source -->
+    <script type="text/javascript" src="../dist/js/jquery.smartWizard.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        // Toolbar extra buttons
+        var btnFinish = $('<button></button>').text('Finish')
+            .addClass('btn btn-info')
+            .on('click', function() {
+                alert('Finish Clicked');
+            });
+        var btnCancel = $('<button></button>').text('Cancel')
+            .addClass('btn btn-danger')
+            .on('click', function() {
+                $('#smartwizard').smartWizard("reset");
+            });
+
+
+        // Smart Wizard
+        $('#smartwizard').smartWizard({
+            selected: 0,
+            theme: 'arrows',
+            transitionEffect: 'fade',
+            showStepURLhash: true,
+            toolbarSettings: {
+                toolbarPosition: 'bottom',
+                toolbarExtraButtons: [btnFinish, btnCancel]
+            }
+        });
+
+
+        // External Button Events
+        $("#reset-btn").on("click", function() {
+            // Reset wizard
+            $('#smartwizard').smartWizard("reset");
+            return true;
+        });
+
+        $("#prev-btn").on("click", function() {
+            // Navigate previous
+            $('#smartwizard').smartWizard("prev");
+            return true;
+        });
+
+        $("#next-btn").on("click", function() {
+            // Navigate next
+            $('#smartwizard').smartWizard("next");
+            return true;
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>
